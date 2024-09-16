@@ -1,0 +1,11 @@
+package-tennis-refactoring:
+  variables:
+    PROJECT_FOLDER: "tennis/refactoring"
+  extends: .java
+  only:
+    refs:
+      - master
+      - merge_requests
+    changes:
+      - ".gitlab-common-ci.yml"
+      - "tennis/refactoring/**/*"
